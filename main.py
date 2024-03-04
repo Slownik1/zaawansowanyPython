@@ -1,16 +1,35 @@
-# This is a sample Python script.
+def display_name(name):
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+    for x in name:
+        print(x)
 
+    name_lista = [x for name in name]
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+    print(name_lista)
 
+def display_number(numbers):
 
-# Press the green button in the gutter to run the script.
+    for n in numbers:
+        if n%2==0:
+            print(n)
+
+def display_number_2(numbers):
+
+    print(numbers[::2])
+
 if __name__ == '__main__':
-    print_hi('PyCharm')
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    #Zadanie 1
+
+    name =['Dawid', 'Bartek', 'Ala', 'Kasia', 'Ania']
+
+    #display_name(name)
+
+    #Zadanie 2
+
+    numbers=list(range(5))
+    print(numbers)
+
+    #display_number(numbers)
+
+    display_number_2(numbers)
