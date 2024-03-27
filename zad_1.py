@@ -1,4 +1,3 @@
-from Studnet import Student
 
 
 class Student:
@@ -9,6 +8,7 @@ class Student:
     def is_passed(self):
         average_marks = sum(self.marks) / len(self.marks)
         return average_marks > 50
+
 
 if __name__ == '__main__':
 

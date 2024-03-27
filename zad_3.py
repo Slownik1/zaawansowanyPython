@@ -8,6 +8,7 @@ class Property:
     def __str__(self):
         return f"Property:\nArea: {self.area} sq. meters\nRooms: {self.rooms}\nPrice: {self.price} dollars\nAddress: {self.address}"
 
+
 class House(Property):
     def __init__(self, area, rooms, price, address, plot):
         super().__init__(area, rooms, price, address)
@@ -16,6 +17,7 @@ class House(Property):
     def __str__(self):
         return f"{super().__str__()}\nHouse Specifics:\nPlot Size: {self.plot} sq. meters"
 
+
 class Flat(Property):
     def __init__(self, area, rooms, price, address, floor):
         super().__init__(area, rooms, price, address)
@@ -23,6 +25,7 @@ class Flat(Property):
 
     def __str__(self):
         return f"{super().__str__()}\nFlat Specifics:\nFloor: {self.floor}"
+
 
 if __name__ == '__main__':
 
