@@ -16,6 +16,8 @@ class Brawery:
         self.website_url=data['website_url']
         self.state=data['state']
         self.street=data['street']
+
+
     def __str__(self):
         return (f"All data: {self.id}, {self.name} "
                 f"{self.brewery_type}, {self.address_1}, {self.address_2}, {self.address_3} "
